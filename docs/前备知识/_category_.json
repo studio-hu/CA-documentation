@@ -1,0 +1,8 @@
+{
+  "label": "前备知识",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "报修小程序所使用到的知识点"
+  }
+}

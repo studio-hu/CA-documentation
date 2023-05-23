@@ -4,42 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '微信小程序',
+    url: "/img/miniProgram.jpg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          本小程序是由广州软件学院计协开发的，暂且只有报修功能，之后会对该系统进行优化以及开发新功能。欢迎大家对该系统进行反馈，可通过微信公众号"GR计协"或邮箱"ca.sise@outlook.com"进行反馈。后续我们会为小程序开发反馈等功能!感谢大家对计协的支持!
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '报账系统',
+      url: "/img/miniProgram.jpg",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        报账系统有广州软件学院计算机协会开发，方便成员进行账单报销
       </>
     ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  }
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({url, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} role="img" src={url} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
